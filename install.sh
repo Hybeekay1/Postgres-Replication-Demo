@@ -4,10 +4,10 @@
 # postgres containers are started without any password
 # ===========================================================
 echo "Building Master Image"
-docker build -t postgres-master -f ./master/Dockerfile ./master-db
+docker build -t postgres-master -f ./master-db/Dockerfile ./master-db
 # ==========================================================
 echo "Build Replica Image"
-docker build -t postgres-slave -f ./slave/Dockerfile ./slave-db
+docker build -t postgres-slave -f ./slave-db/Dockerfile ./slave-db
 # ==========================================================
 echo "Creating Network"
 docker network create -d bridge test
