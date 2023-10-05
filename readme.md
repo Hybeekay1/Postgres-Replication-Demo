@@ -9,6 +9,8 @@ The Containers can be run by either the docker cli , Dockerfile or using docker-
 
 Run chmod +x ./install.sh Add the permission to execute the script
 
+    chmod +x ./install.sh
+
     ./install.sh 
 
 install.sh will perform the following steps
