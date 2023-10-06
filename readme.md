@@ -34,17 +34,17 @@ Run ./cleanup.sh to delete all resources used in the install script
 ### Testing 
 Access the master-db container
 
-    docker exec -it master-db /bin/sh # install script
+    docker exec -it master-db /bin/sh 
 
 
-Create a Database
+Create a Database name "test"
 
-    psql -U test -c "CREATE DATABASE replicatest;"
+    psql -U test -c "CREATE DATABASE test;"
 
 
 Verify Replication by Accessing Slave Container
 
-    docker exec -it replica-db /bin/sh # install script
+    docker exec -it slave-db /bin/sh 
 
 
 Confirm DB is listed
