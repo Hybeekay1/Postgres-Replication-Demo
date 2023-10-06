@@ -2,6 +2,20 @@
 Mini Project to show Postgres Replication in docker containers.  
 
 
+### Install Docker Desktop
+Recommended approach to install Docker Desktop on Ubuntu:
+
+Set up Docker's package repository.  [See Install using the Apt repository]([https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository])
+, step 1.
+
+Download latest [DEB package]([https://openai.com](https://desktop.docker.com/linux/main/amd64/docker-desktop-4.24.0-amd64.deb?utm_source=docker&utm_medium=webreferral&utm_campaign=docs-driven-download-linux-amd64&_gl=1*tylqiz*_ga*MTgwNjY4MDIwNC4xNjkxOTQ4MTc3*_ga_XJWPQMJYHQ*MTY5NjU4MzQxOC4xNS4xLjE2OTY1ODM2NTEuNTAuMC4w))
+
+Install the package with apt as follows:
+
+    sudo apt-get update
+    sudo apt-get install ./docker-desktop-<version>-<arch>.deb
+
+
 ### Running the Containers
 The Containers can be run by either the docker cli , Dockerfile or using docker-compose  
 
