@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+rm -rf ${PGDATA}/*
 until ping -c 1 -W 1 master-db
 do
 echo “Waiting for master to ping…”
