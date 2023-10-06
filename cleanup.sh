@@ -4,7 +4,7 @@ echo "Stopping master Container"
 docker stop master-db
 
 echo "Stopping slave Container"
-docker stop replica-db
+docker stop slave-db
 
 echo "Deleting Test Network"
 docker network rm test
@@ -14,5 +14,5 @@ docker volume rm master-data
 docker volume rm slave-data
 
 echo "Deleting Docker Images"
-docker rmi replication-slave
-docker rmi replication-master
+docker rmi postgres-slave
+docker rmi postgres-master
