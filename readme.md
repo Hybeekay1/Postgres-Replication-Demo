@@ -53,11 +53,11 @@ Check the container created
     docker ps
 
 
-list docker volumes
+Check docker volumes
 
     docker volume ls
 
-list docker netwotk
+Check docker netwotk
 
     docker network ls
 
