@@ -1,5 +1,5 @@
 # POSTGRES DOCKER REPLICATION
-Mini Project to show Postgres Replication in docker containers.  
+Project to show Postgres Replication in docker containers.  
 
 
 # Install Docker Desktop
@@ -42,6 +42,24 @@ install.sh will perform the following steps
 - Creates the test network
 - Creates docker volumes
 - Starts the Containers
+
+
+Check the images created
+
+    docker images
+
+Check the container created
+
+    docker ps
+
+
+list docker volumes
+
+    docker volume ls
+
+list docker netwotk
+
+    docker network ls
 
 Run chmod +x ./cleanup.sh Add the permission to execute the script
 
